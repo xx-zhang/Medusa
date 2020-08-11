@@ -1,9 +1,10 @@
 FROM alpine:latest
 
 MAINTAINER actanble@gmail.com
+WORKDIR /usr/src/app
 
 # 设置alpine的镜像地址为阿里云的地址
-RUN wget /get-pip.py -qO https://bootstrap.pypa.io/get-pip.py && \
+RUN wget -qO  /get-pip.py https://bootstrap.pypa.io/get-pip.py && \
     echo "https://mirrors.aliyun.com/alpine/v3.10/main/" > /etc/apk/repositories \
         && apk update \
         && apk add --no-cache bash \
