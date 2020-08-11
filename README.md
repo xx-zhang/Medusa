@@ -9,4 +9,14 @@
 
 ## Upgrade 
 - 2020-8-11: 增加docker部署的支持。
+```bash
+docker run --rm -it \
+    -v $(pwd)/Log:/usr/src/app/Log \
+    -v $(pwd)/Temp:/usr/src/app/Temp \
+    registry.cn-beijing.aliyuncs.com/rapid7/medusa \
+    python3 MedusaScan.py -u http://172.21.7.225:80 -t 3
+```
+- 发现并不成熟好吧，所以放弃使用。
 
+## GiveUpUsing 
+- v0.87版本并不好用。等待web和其他功能成熟。
