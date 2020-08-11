@@ -26,4 +26,4 @@ RUN pip install -r /requirements.txt
 
 USER root
 
-#ENTRYPOINT ['python' ]
+CMD ['python MedusaScan.py' ]
