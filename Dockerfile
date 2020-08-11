@@ -8,12 +8,13 @@ RUN wget -qO  /get-pip.py https://bootstrap.pypa.io/get-pip.py && \
     echo "https://mirrors.aliyun.com/alpine/v3.10/main/" > /etc/apk/repositories \
         && apk update \
         && apk add --no-cache bash \
-            alibevent-dev libxml2-dev  libffi libxml2 libxslt libxslt-dev  \
+            libxml2-dev  libffi libxml2 libxslt libxslt-dev  \
             python3 gcc g++ python3-dev linux-headers libffi-dev openssl-dev \
         && python3 /get-pip.py \
         && cd .. \
         && rm -f /get-pip.py \
         && rm -rf /var/cache/apk/*
+# TODO alibevent-dev 没有所以被删除了, NOTE 这里
 
 ADD ./Medusa.txt /requirements.txt
 # TODO 生产环境中不要把镜像放到开源的镜像，而是推荐自己映射。
