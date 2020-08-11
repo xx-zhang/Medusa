@@ -1,0 +1,9 @@
+.idea
+**/.DS_Store
+**/__pycache__
+Medusa.db
+my.log
+Log
+ScanResult
+Temp
+marshalsec.jar

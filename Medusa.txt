@@ -1,0 +1,29 @@
+# coding:utf-8
+--trusted-host mirrors.aliyun.com
+--index-url http://mirrors.aliyun.com/pypi/simple/
+# --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+bs4 ==0.0.1
+fake-useragent ==0.1.11
+requests ==2.22.0
+urllib3 ==1.25.3
+python-nmap ==0.6.1
+PyMySQL ==0.9.3
+IPy ==1.0
+scrapy ==1.7.3
+tqdm ==4.38.0
+dnspython ==1.16.0
+tldextract ==2.2.2
+django==3.0.5
+Celery==4.4.2
+django_redis==4.11.0
+eventlet==0.25.1
+pyDES==2.0.1
+typing==3.7.4.1
+docxtpl==0.9.2
+uuid==1.30
+pycryptodome==3.9.7
+PySocks==1.7.1
+django-cors-headers==3.3.0
+django-simple-captcha==0.5.12
+dubbo-py==0.2.2
